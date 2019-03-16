@@ -1,0 +1,30 @@
+Introduction
+Welcome to the --- Data Science Coding Challenge! We use this exercise to learn more about your coding style and problem solving approach.
+Please have fun and contact your recruiter if you have any questions. Below is some important information regarding this coding challenge.
+Time Limit: You have 2 days to complete this challenge once it is sent. If you have any concerns about meeting this deadline, please let us know.
+
+Data Description:
+The data set contains a csv file tags.csv, where each line is a set of related tags. You can think of these tags being associated with multiple different
+articles on a media website. The csv file contains 1000 lines and the first 5 lines look something like this:
+
+"physical_entity", "object", "thread", "remains", "blade", "physical_object",
+"archeological_remains", "ribbon", "physical_entity", "engine", "substance", "plaster", "matter",
+"causal_agency", "mixture", "glop", "causal_agent", "roughcast", "cause","physical_entity", "scanning",
+"radiography", "physical_process", "process", "photography", "autoradiography", "accession", "increase", "growth", "increment", "skiagraphy",
+"physical_entity", "substance", "grandiosity", "grandiloquence", "style", "abstraction", "rant", "magniloquence", "expressive_style", "communication", "claptrap", "rhetoric", "terseness", "blah", "bombast", "brevity", "ornateness", "fustian", "voice", "abstract_entity"
+
+Question 1:
+Suppose we randomly select a row from the tags.csv file. Write a function that takes as input any tag and returns the probability that
+it appears in the randomly selected row. Report the probability that the tag "thing" will appear in the randomly selected row.
+
+
+Question 2:
+Write a function that takes as input any two tags and returns the probability of finding the second tag in a row containing the first tag.
+Report the following two numbers:
+A. The probability of finding a tag named "physical_entity" in a row that contains the tag named "object."
+B. The probability of finding a tag named "object" in a row that contains the tag named physical_entity.
+
+Question 3:
+Suppose we randomly select N rows from the tags.csv with replacement. Write a function that takes as input two positive integers K and N and
+returns the pairs of tags that have a good chance (greater than 50%) of appearing together on at least K rows from the random sample of N rows.
+Report any pair of tags that have a good chance of appearing together on at least 10 rows from a random sample of 100 rows.
